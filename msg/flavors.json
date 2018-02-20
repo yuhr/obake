@@ -1,0 +1,13 @@
+{
+  "default": [
+    "terrific obake has appeared to you!",
+    "obake's getting more impossible!",
+    "you're diving into the depth of obake!",
+    "you're passing through the body of obake!"
+  ],
+  "others": [
+    "you've noticed obake's doing <%- command -%>!",
+    "you've encountered <%- commandKebab -%>ing obake!",
+    "someone's screaming \"<%- command -%>\"!"
+  ]
+}

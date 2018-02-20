@@ -1,0 +1,47 @@
+{
+  "name": "@yuhr/obake",
+  "version": "0.0.0",
+  "description": "A general purpose command-line wrapper",
+  "bin": "cli.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yuhr/obake.git"
+  },
+  "keywords": [
+    "task",
+    "cli"
+  ],
+  "author": "yuhr <mail@yuhr.org>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yuhr/obake/issues"
+  },
+  "homepage": "https://github.com/yuhr/obake#readme",
+  "dependencies": {
+    "@std/esm": "^0.21.7",
+    "ejs": "^2.5.7",
+    "find-up": "^2.1.0",
+    "source-map-support": "^0.5.3"
+  },
+  "devDependencies": {
+    "@types/ejs": "^2.5.0",
+    "@types/find-up": "^2.1.1",
+    "@types/node": "^9.4.6",
+    "cross-env": "^5.1.3",
+    "npm-run-all": "^4.1.2",
+    "typescript": "^2.7.2"
+  },
+  "scripts": {
+    "produce": "cross-env NODE_ENV=production tsc",
+    "watch:tsc": "tsc --watch",
+    "watch": "cross-env NODE_ENV=development run-p watch:*"
+  },
+  "@std/esm": {
+    "esm": "js",
+    "cjs": true,
+    "await": true,
+    "debug": true,
+    "sourceMap": true,
+    "warnings": true
+  }
+}
